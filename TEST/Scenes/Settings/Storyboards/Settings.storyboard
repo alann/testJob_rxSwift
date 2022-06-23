@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTHoves-Light.ttf">
+            <string>TTHoves-Light</string>
+        </array>
+        <array key="TTHoves-Medium.ttf">
+            <string>TTHoves-Medium</string>
+        </array>
+        <array key="TTHoves-Regular.ttf">
+            <string>TTHoves-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="KLe-mc-dpa">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="evt-ub-mOt" customClass="SettingsViewController" customModule="test_job_2_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0zk-6g-0Be">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-FY-Ih9" userLabel="TransferView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="nH0-zi-hTd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-0l-vfu">
+                                                <rect key="frame" x="0.0" y="0.0" width="410" height="1120"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tdV-gt-6tq">
+                                                        <rect key="frame" x="16" y="16" width="378" height="1088"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eRp-Lt-hKM" customClass="I">
+                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="684.5"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uKb-pO-4nu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="22"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyc-QG-k28">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="22"/>
+                                                                                <state key="normal" image="camera.fill" catalog="system"/>
+                                                                            </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Изменить фото профиля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWo-K2-nqq" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="41.5" y="0.0" width="336.5" height="22"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Light" family="TT Hoves" pointSize="17"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <connections>
+                                                                            <outletCollection property="gestureRecognizers" destination="DvE-pA-6Cb" appends="YES" id="ZWh-54-jTL"/>
+                                                                        </connections>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KzL-xB-fHi">
+                                                                        <rect key="frame" x="0.0" y="38" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQw-s8-Itv" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jN-Qf-PAf">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R25-oO-Zf8">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="56" id="AJv-Tm-EQZ" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                    <constraint firstAttribute="trailing" secondItem="R25-oO-Zf8" secondAttribute="trailing" constant="8" id="ito-bq-Y6D"/>
+                                                                                    <constraint firstItem="R25-oO-Zf8" firstAttribute="top" secondItem="6jN-Qf-PAf" secondAttribute="top" id="pCG-Kx-U5n"/>
+                                                                                    <constraint firstItem="R25-oO-Zf8" firstAttribute="leading" secondItem="6jN-Qf-PAf" secondAttribute="leading" constant="16" id="tI9-aO-hK1"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="R25-oO-Zf8" secondAttribute="bottom" id="xBh-O7-GbP"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rBL-ii-kub">
+                                                                        <rect key="frame" x="0.0" y="128" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEE-1X-7df" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltu-Oz-wL3">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HdG-xa-jAd">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="HdG-xa-jAd" firstAttribute="top" secondItem="ltu-Oz-wL3" secondAttribute="top" id="Qtf-sK-Uur"/>
+                                                                                    <constraint firstItem="HdG-xa-jAd" firstAttribute="leading" secondItem="ltu-Oz-wL3" secondAttribute="leading" constant="16" id="i1U-YQ-1So"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="HdG-xa-jAd" secondAttribute="trailing" constant="8" id="rCW-5I-2jH"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="HdG-xa-jAd" secondAttribute="bottom" id="rzW-w5-lMx"/>
+                                                                                    <constraint firstAttribute="height" constant="56" id="wX8-4M-RNV" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g87-LP-tfi">
+                                                                        <rect key="frame" x="0.0" y="218" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отчество" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-e9-MVk" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4G-xs-vtF">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ct3-zm-Esz">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="ct3-zm-Esz" firstAttribute="top" secondItem="u4G-xs-vtF" secondAttribute="top" id="0fF-oG-RmU"/>
+                                                                                    <constraint firstAttribute="height" constant="56" id="5z1-X5-fjr" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                    <constraint firstItem="ct3-zm-Esz" firstAttribute="leading" secondItem="u4G-xs-vtF" secondAttribute="leading" constant="16" id="8c6-QF-CnH"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="ct3-zm-Esz" secondAttribute="bottom" id="YOn-B1-pFp"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="ct3-zm-Esz" secondAttribute="trailing" constant="8" id="gFQ-5V-DAx"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-d2-Sva">
+                                                                        <rect key="frame" x="0.0" y="308" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXs-hZ-y4b" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmc-2t-Hgf">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Место рождения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-ai-gJJ">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="56" id="7Rc-x7-mI3" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                    <constraint firstItem="gKG-ai-gJJ" firstAttribute="top" secondItem="Zmc-2t-Hgf" secondAttribute="top" id="WHI-sa-qqa"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="gKG-ai-gJJ" secondAttribute="trailing" constant="8" id="fD2-Q9-Rvq"/>
+                                                                                    <constraint firstItem="gKG-ai-gJJ" firstAttribute="leading" secondItem="Zmc-2t-Hgf" secondAttribute="leading" constant="16" id="tra-SU-uZ3"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="gKG-ai-gJJ" secondAttribute="bottom" id="uVc-9L-4kW"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iZK-BF-Zvx">
+                                                                        <rect key="frame" x="0.0" y="398" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUb-sa-lCp" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzN-xD-IfL">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-BC-STn">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="10"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y25-wW-P2I">
+                                                                                        <rect key="frame" x="342" y="15" width="28" height="25.5"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="28" id="Bt8-2y-oDd"/>
+                                                                                            <constraint firstAttribute="width" constant="28" id="JAj-2C-h1C"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="Y25-wW-P2I" firstAttribute="trailing" secondItem="5AX-BC-STn" secondAttribute="trailing" id="19t-Pr-OKB"/>
+                                                                                    <constraint firstAttribute="height" constant="56" id="Iqk-aQ-zBG" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                    <constraint firstAttribute="bottom" secondItem="5AX-BC-STn" secondAttribute="bottom" id="Is7-gq-lhc"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="5AX-BC-STn" secondAttribute="trailing" constant="8" id="SoW-fU-6v8"/>
+                                                                                    <constraint firstItem="Y25-wW-P2I" firstAttribute="centerY" secondItem="5AX-BC-STn" secondAttribute="centerY" id="gcJ-GJ-jGA"/>
+                                                                                    <constraint firstItem="5AX-BC-STn" firstAttribute="leading" secondItem="vzN-xD-IfL" secondAttribute="leading" constant="16" id="ukI-T1-8cy"/>
+                                                                                    <constraint firstItem="5AX-BC-STn" firstAttribute="top" secondItem="vzN-xD-IfL" secondAttribute="top" id="vUZ-3R-cgj"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SUq-1v-qVj">
+                                                                        <rect key="frame" x="0.0" y="488" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Организация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrJ-dj-xNr" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocs-5P-yaB">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Организация" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-tk-xS7">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="2NF-tk-xS7" secondAttribute="trailing" constant="8" id="NeX-KD-ph9"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="2NF-tk-xS7" secondAttribute="bottom" id="RSJ-iN-4Bb"/>
+                                                                                    <constraint firstItem="2NF-tk-xS7" firstAttribute="leading" secondItem="Ocs-5P-yaB" secondAttribute="leading" constant="16" id="UCP-Tb-uS7"/>
+                                                                                    <constraint firstItem="2NF-tk-xS7" firstAttribute="top" secondItem="Ocs-5P-yaB" secondAttribute="top" id="Yep-MR-veF"/>
+                                                                                    <constraint firstAttribute="height" constant="56" id="kZ6-Yi-Wwi" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HuA-6F-2FV">
+                                                                        <rect key="frame" x="0.0" y="578" width="378" height="74"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Должность" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O86-AW-LOL" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-Ub-IjR">
+                                                                                <rect key="frame" x="0.0" y="18" width="378" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Должность" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7K-Dx-FLd">
+                                                                                        <rect key="frame" x="16" y="0.0" width="354" height="56"/>
+                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="140"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="w7K-Dx-FLd" firstAttribute="leading" secondItem="1g8-Ub-IjR" secondAttribute="leading" constant="16" id="BVF-xu-xdn"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="w7K-Dx-FLd" secondAttribute="trailing" constant="8" id="Ghh-pG-Cbk"/>
+                                                                                    <constraint firstItem="w7K-Dx-FLd" firstAttribute="top" secondItem="1g8-Ub-IjR" secondAttribute="top" id="LAP-A3-HsT"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="w7K-Dx-FLd" secondAttribute="bottom" id="aA3-G4-bX0"/>
+                                                                                    <constraint firstAttribute="height" constant="56" id="i9o-qO-i1v" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                                <real key="value" value="44"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                                <real key="value" value="52"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                                <real key="value" value="48"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </constraint>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="6"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ИНТЕРЕСУЮЩИЕ ТЕМЫ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc3-91-sha" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="668" width="378" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="14"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </stackView>
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-Lv-WFC">
+                                                                <rect key="frame" x="0.0" y="700.5" width="378" height="315.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TopicCell" id="a9R-xD-xYS" customClass="TopicCell" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="24.5" width="378" height="58.5"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a9R-xD-xYS" id="iOT-tk-d7A">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="378" height="58.5"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-Wo-2hn">
+                                                                                    <rect key="frame" x="1" y="18.5" width="22" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="22" id="QMN-xT-6hR"/>
+                                                                                        <constraint firstAttribute="height" constant="22" id="Xkb-PL-e1F"/>
+                                                                                    </constraints>
+                                                                                    <state key="normal" image="unselected"/>
+                                                                                </button>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB8-Wu-2dH">
+                                                                                    <rect key="frame" x="37" y="19" width="317" height="20.5"/>
+                                                                                    <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="17"/>
+                                                                                    <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstItem="qB8-Wu-2dH" firstAttribute="top" secondItem="iOT-tk-d7A" secondAttribute="topMargin" constant="8" id="2zT-MC-o0b"/>
+                                                                                <constraint firstItem="kUI-Wo-2hn" firstAttribute="leading" secondItem="iOT-tk-d7A" secondAttribute="leading" constant="1" id="4eW-Y5-5g1"/>
+                                                                                <constraint firstAttribute="bottomMargin" secondItem="qB8-Wu-2dH" secondAttribute="bottom" constant="8" id="HRy-Pa-BwF"/>
+                                                                                <constraint firstItem="qB8-Wu-2dH" firstAttribute="leading" secondItem="kUI-Wo-2hn" secondAttribute="trailing" constant="14" id="PTe-Vb-TuU"/>
+                                                                                <constraint firstItem="kUI-Wo-2hn" firstAttribute="centerY" secondItem="iOT-tk-d7A" secondAttribute="centerY" id="qPp-Jf-I2k"/>
+                                                                                <constraint firstAttribute="trailingMargin" secondItem="qB8-Wu-2dH" secondAttribute="trailing" constant="4" id="rzU-Ge-Wyc"/>
+                                                                                <constraint firstItem="qB8-Wu-2dH" firstAttribute="centerY" secondItem="iOT-tk-d7A" secondAttribute="centerY" id="wNZ-eE-HE5"/>
+                                                                            </constraints>
+                                                                        </tableViewCellContentView>
+                                                                        <connections>
+                                                                            <outlet property="selectedButton" destination="kUI-Wo-2hn" id="B2f-19-rzo"/>
+                                                                            <outlet property="topicLabel" destination="qB8-Wu-2dH" id="t5X-yV-WJd"/>
+                                                                        </connections>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                            </tableView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYh-rh-sJF">
+                                                                <rect key="frame" x="0.0" y="1032" width="378" height="56"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="56" id="Ny9-gL-8Pw" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                <real key="value" value="44"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                <real key="value" value="48"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                <real key="value" value="52"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                <real key="value" value="48"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TTHoves-Medium" family="TT Hoves" pointSize="19"/>
+                                                                <state key="normal" title="Сохранить">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="6"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="tdV-gt-6tq" firstAttribute="leading" secondItem="vEO-0l-vfu" secondAttribute="leading" constant="16" id="3Fx-Ud-yEY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tdV-gt-6tq" secondAttribute="trailing" constant="16" id="CmO-UK-0m1"/>
+                                                    <constraint firstItem="tdV-gt-6tq" firstAttribute="top" secondItem="vEO-0l-vfu" secondAttribute="top" constant="16" id="InO-sQ-rVC"/>
+                                                    <constraint firstAttribute="height" constant="1120" id="Sa9-fI-TST"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1120" id="Tjc-Hq-eJ2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tdV-gt-6tq" secondAttribute="bottom" constant="16" id="frd-As-k1b"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vEO-0l-vfu" firstAttribute="top" secondItem="nH0-zi-hTd" secondAttribute="top" id="gct-4C-eLw"/>
+                                            <constraint firstItem="vEO-0l-vfu" firstAttribute="leading" secondItem="nH0-zi-hTd" secondAttribute="leading" id="hI4-Dz-3UL"/>
+                                            <constraint firstAttribute="trailing" secondItem="vEO-0l-vfu" secondAttribute="trailing" id="i8F-t1-2Gi"/>
+                                            <constraint firstAttribute="bottom" secondItem="vEO-0l-vfu" secondAttribute="bottom" id="sxQ-NJ-vbx"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nH0-zi-hTd" secondAttribute="bottom" id="A5h-LC-WT4"/>
+                                    <constraint firstItem="nH0-zi-hTd" firstAttribute="leading" secondItem="9KN-FY-Ih9" secondAttribute="leading" id="epW-ve-rA7"/>
+                                    <constraint firstItem="nH0-zi-hTd" firstAttribute="top" secondItem="9KN-FY-Ih9" secondAttribute="top" id="fA8-Nk-0Cp"/>
+                                    <constraint firstItem="vEO-0l-vfu" firstAttribute="width" secondItem="9KN-FY-Ih9" secondAttribute="width" multiplier="0.990338" id="lSa-BX-3kr"/>
+                                    <constraint firstAttribute="trailing" secondItem="nH0-zi-hTd" secondAttribute="trailing" id="xH9-zp-EQc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="db0-lI-PPM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9KN-FY-Ih9" firstAttribute="leading" secondItem="db0-lI-PPM" secondAttribute="leading" id="6ue-bx-2QK"/>
+                            <constraint firstItem="9KN-FY-Ih9" firstAttribute="top" secondItem="0zk-6g-0Be" secondAttribute="top" id="6w2-gr-Nyc"/>
+                            <constraint firstAttribute="bottom" secondItem="9KN-FY-Ih9" secondAttribute="bottom" id="Ufb-Hs-Ldc"/>
+                            <constraint firstItem="9KN-FY-Ih9" firstAttribute="trailing" secondItem="db0-lI-PPM" secondAttribute="trailing" id="ksU-dm-TaF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthplaceTextField" destination="gKG-ai-gJJ" id="Tli-fZ-6Vy"/>
+                        <outlet property="dateOfBirthTextField" destination="5AX-BC-STn" id="e2L-W0-YNU"/>
+                        <outlet property="firstNameTextField" destination="HdG-xa-jAd" id="6C6-1c-Axs"/>
+                        <outlet property="interestTopicsTableView" destination="ooP-Lv-WFC" id="Qwy-kU-WCW"/>
+                        <outlet property="lastNameTextField" destination="R25-oO-Zf8" id="nWV-ex-vA1"/>
+                        <outlet property="middleNameTextField" destination="ct3-zm-Esz" id="LyX-uv-4QA"/>
+                        <outlet property="organizationTextField" destination="2NF-tk-xS7" id="UER-RZ-USD"/>
+                        <outlet property="positionTextField" destination="w7K-Dx-FLd" id="EVo-rK-b9H"/>
+                        <outlet property="saveButton" destination="xYh-rh-sJF" id="g9R-Vu-9p0"/>
+                        <outlet property="scrollView" destination="nH0-zi-hTd" id="2Hh-QB-ZNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKI-qE-KMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DvE-pA-6Cb">
+                    <connections>
+                        <action selector="changeProfileImage:" destination="evt-ub-mOt" id="UlJ-Nk-c9O"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="unselected" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

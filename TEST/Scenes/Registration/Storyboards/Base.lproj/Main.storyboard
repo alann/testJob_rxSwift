@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DzC-UM-bs4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTHoves-Medium.ttf">
+            <string>TTHoves-Medium</string>
+        </array>
+        <array key="TTHoves-Regular.ttf">
+            <string>TTHoves-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="muY-pl-NPo">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="dTB-rg-kVN" customClass="RegistrationViewController" customModule="test_job_2_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cx1-IK-hdy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMj-G2-EYd" userLabel="TransferView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-2K-t5v">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r93-F4-wAF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="771"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-wb-7V6" customClass="I">
+                                                        <rect key="frame" x="16" y="16" width="382" height="524"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-Ld-Yqh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-xB-r3C" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUp-WH-bRZ">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbF-YK-O64">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="zbF-YK-O64" secondAttribute="bottom" id="4kj-IF-aCo"/>
+                                                                            <constraint firstItem="zbF-YK-O64" firstAttribute="top" secondItem="sUp-WH-bRZ" secondAttribute="top" id="BKF-kU-PI8"/>
+                                                                            <constraint firstItem="zbF-YK-O64" firstAttribute="leading" secondItem="sUp-WH-bRZ" secondAttribute="leading" constant="16" id="SFc-F1-dMB"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="zbF-YK-O64" secondAttribute="trailing" constant="8" id="YUQ-89-aGl"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="jhp-nl-o6L" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-HC-IH2">
+                                                                <rect key="frame" x="0.0" y="90" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewn-FM-Oma" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-wo-S6t">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-9x-yqf">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="Yhq-9x-yqf" secondAttribute="trailing" constant="8" id="MUW-i3-W2F"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="Yhq-9x-yqf" secondAttribute="bottom" id="NNV-cn-9nu"/>
+                                                                            <constraint firstItem="Yhq-9x-yqf" firstAttribute="leading" secondItem="hKZ-wo-S6t" secondAttribute="leading" constant="16" id="TXZ-Z8-JG0"/>
+                                                                            <constraint firstItem="Yhq-9x-yqf" firstAttribute="top" secondItem="hKZ-wo-S6t" secondAttribute="top" id="usj-kL-Cqa"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="yZg-jv-nKB" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="K1L-5h-Ez3">
+                                                                <rect key="frame" x="0.0" y="180" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отчество" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqY-Vu-uII" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqs-DQ-BoK">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bER-dl-U3r">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="bER-dl-U3r" secondAttribute="bottom" id="8MA-vv-3de"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="ZVf-tF-Z8i" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                            <constraint firstAttribute="trailing" secondItem="bER-dl-U3r" secondAttribute="trailing" constant="8" id="maF-ND-lVD"/>
+                                                                            <constraint firstItem="bER-dl-U3r" firstAttribute="leading" secondItem="Xqs-DQ-BoK" secondAttribute="leading" constant="16" id="oCl-9Z-x4l"/>
+                                                                            <constraint firstItem="bER-dl-U3r" firstAttribute="top" secondItem="Xqs-DQ-BoK" secondAttribute="top" id="pQc-dq-fXt"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xf2-pe-Jen">
+                                                                <rect key="frame" x="0.0" y="270" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес электронной почты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAk-UU-NDe" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-pF-eSC">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93D-JW-20h">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="93D-JW-20h" firstAttribute="leading" secondItem="1wE-pF-eSC" secondAttribute="leading" constant="16" id="2CQ-82-u9I"/>
+                                                                            <constraint firstItem="93D-JW-20h" firstAttribute="top" secondItem="1wE-pF-eSC" secondAttribute="top" id="JKO-i8-ZNs"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="Ope-O2-y0u" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                            <constraint firstAttribute="trailing" secondItem="93D-JW-20h" secondAttribute="trailing" constant="8" id="s6b-dB-mx2"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="93D-JW-20h" secondAttribute="bottom" id="vlY-p3-Jod"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aUq-r7-NUM">
+                                                                <rect key="frame" x="0.0" y="360" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERr-7z-bxW" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cB-Ez-1tH">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XC-tO-YLa">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqB-xP-xy8">
+                                                                                <rect key="frame" x="350" y="17" width="24" height="22"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="24" id="D5t-cl-VQF"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                                                <state key="normal" title="Button" image="eye" catalog="system"/>
+                                                                                <connections>
+                                                                                    <action selector="showHidePassword:" destination="dTB-rg-kVN" eventType="touchUpInside" id="1I6-Zs-XjL"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="4XC-tO-YLa" firstAttribute="leading" secondItem="5cB-Ez-1tH" secondAttribute="leading" constant="16" id="3In-fs-xUs"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="4XC-tO-YLa" secondAttribute="bottom" id="3hd-EQ-DHY"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="4XC-tO-YLa" secondAttribute="trailing" constant="8" id="AXw-Hg-bN9"/>
+                                                                            <constraint firstItem="4XC-tO-YLa" firstAttribute="top" secondItem="5cB-Ez-1tH" secondAttribute="top" id="BsV-af-qiV"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="OET-1f-QLz" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                            <constraint firstAttribute="trailing" secondItem="jqB-xP-xy8" secondAttribute="trailing" constant="8" id="TB9-L3-VMp"/>
+                                                                            <constraint firstItem="jqB-xP-xy8" firstAttribute="centerY" secondItem="5cB-Ez-1tH" secondAttribute="centerY" id="cyk-fr-l98"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="L2M-9G-CMc">
+                                                                <rect key="frame" x="0.0" y="450" width="382" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повтор пароля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnX-YF-90y" customClass="UILocalizedLabel" customModule="test_job_2_" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="12"/>
+                                                                        <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smg-2B-3kE">
+                                                                        <rect key="frame" x="0.0" y="18" width="382" height="56"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oke-tq-zXg">
+                                                                                <rect key="frame" x="16" y="0.0" width="358" height="56"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="tintColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <color key="textColor" red="0.086274509799999996" green="0.16862745100000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <fontDescription key="fontDescription" name="TTHoves-Regular" family="TT Hoves" pointSize="19"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="140"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g04-Ut-B3F">
+                                                                                <rect key="frame" x="350" y="17" width="24" height="22"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="24" id="Yge-Yo-pcy"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                                <state key="normal" title="Button" image="eye" catalog="system"/>
+                                                                                <connections>
+                                                                                    <action selector="showHideConfirmPassword:" destination="dTB-rg-kVN" eventType="touchUpInside" id="wks-eX-JUI"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.61176470589999998" green="0.65490196079999996" blue="0.72156862749999995" alpha="0.100197988" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="g04-Ut-B3F" secondAttribute="trailing" constant="8" id="4kz-Df-p6M"/>
+                                                                            <constraint firstItem="oke-tq-zXg" firstAttribute="top" secondItem="smg-2B-3kE" secondAttribute="top" id="9Jk-IK-bLI"/>
+                                                                            <constraint firstItem="g04-Ut-B3F" firstAttribute="centerY" secondItem="smg-2B-3kE" secondAttribute="centerY" id="IHZ-qt-f7P"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="oke-tq-zXg" secondAttribute="bottom" id="fFG-wF-Qsz"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="oke-tq-zXg" secondAttribute="trailing" constant="8" id="nl6-nn-Sf8"/>
+                                                                            <constraint firstItem="oke-tq-zXg" firstAttribute="leading" secondItem="smg-2B-3kE" secondAttribute="leading" constant="16" id="wzp-Nb-NgB"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="xWK-KZ-NmH" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                                        <real key="value" value="44"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                                        <real key="value" value="52"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                                        <real key="value" value="48"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </constraint>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="6"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-N1-C7B">
+                                                        <rect key="frame" x="16" y="572" width="382" height="56"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="O90-ET-Fkz" customClass="NSLayoutHelper" customModule="test_job_2_" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                                                        <real key="value" value="44"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                                                        <real key="value" value="48"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                                                        <real key="value" value="52"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2">
+                                                                        <real key="value" value="48"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TTHoves-Medium" family="TT Hoves" pointSize="19"/>
+                                                        <state key="normal" title="Регистрация">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="d8N-N1-C7B" firstAttribute="top" secondItem="zfd-wb-7V6" secondAttribute="bottom" constant="32" id="BuZ-Zq-I3B"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d8N-N1-C7B" secondAttribute="trailing" constant="16" id="Fqt-So-dhf"/>
+                                                    <constraint firstItem="d8N-N1-C7B" firstAttribute="leading" secondItem="r93-F4-wAF" secondAttribute="leading" constant="16" id="GTG-68-bFR"/>
+                                                    <constraint firstItem="zfd-wb-7V6" firstAttribute="top" secondItem="r93-F4-wAF" secondAttribute="top" constant="16" id="IvC-l4-C92"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zfd-wb-7V6" secondAttribute="trailing" constant="16" id="UuY-1U-wMn"/>
+                                                    <constraint firstAttribute="height" constant="771" id="ZLn-lc-IBu"/>
+                                                    <constraint firstItem="zfd-wb-7V6" firstAttribute="leading" secondItem="r93-F4-wAF" secondAttribute="leading" constant="16" id="zRF-20-g1O"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="r93-F4-wAF" secondAttribute="bottom" id="9Z7-DM-abZ"/>
+                                            <constraint firstItem="r93-F4-wAF" firstAttribute="leading" secondItem="pRw-2K-t5v" secondAttribute="leading" id="a9H-i8-BnH"/>
+                                            <constraint firstItem="r93-F4-wAF" firstAttribute="top" secondItem="pRw-2K-t5v" secondAttribute="top" id="qF0-hQ-qHy"/>
+                                            <constraint firstAttribute="trailing" secondItem="r93-F4-wAF" secondAttribute="trailing" id="uSd-j5-8DT"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pRw-2K-t5v" firstAttribute="top" secondItem="hMj-G2-EYd" secondAttribute="top" id="111-yD-cxG"/>
+                                    <constraint firstAttribute="bottom" secondItem="pRw-2K-t5v" secondAttribute="bottom" id="FiE-8Z-DGe"/>
+                                    <constraint firstItem="pRw-2K-t5v" firstAttribute="leading" secondItem="hMj-G2-EYd" secondAttribute="leading" id="Y6k-XA-aKI"/>
+                                    <constraint firstItem="r93-F4-wAF" firstAttribute="width" secondItem="hMj-G2-EYd" secondAttribute="width" id="YrG-px-RIw"/>
+                                    <constraint firstAttribute="trailing" secondItem="pRw-2K-t5v" secondAttribute="trailing" id="m2X-7J-Yud"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D5Q-jY-f6K"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hMj-G2-EYd" firstAttribute="top" secondItem="Cx1-IK-hdy" secondAttribute="top" id="6ES-mh-aRz"/>
+                            <constraint firstItem="hMj-G2-EYd" firstAttribute="trailing" secondItem="D5Q-jY-f6K" secondAttribute="trailing" id="WbC-Nl-1qS"/>
+                            <constraint firstItem="hMj-G2-EYd" firstAttribute="bottom" secondItem="D5Q-jY-f6K" secondAttribute="bottom" id="deS-df-CAn"/>
+                            <constraint firstItem="hMj-G2-EYd" firstAttribute="leading" secondItem="D5Q-jY-f6K" secondAttribute="leading" id="zDj-vM-eCo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XnO-wt-Hfl"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="oke-tq-zXg" id="o0A-hd-JCD"/>
+                        <outlet property="emailTextField" destination="93D-JW-20h" id="oQ9-6f-OxI"/>
+                        <outlet property="firstNameTextField" destination="Yhq-9x-yqf" id="lZT-Jy-SLg"/>
+                        <outlet property="lastNameTextField" destination="zbF-YK-O64" id="Zgc-OB-oJn"/>
+                        <outlet property="middleNameTextField" destination="bER-dl-U3r" id="lIp-ae-OYj"/>
+                        <outlet property="passwordTextField" destination="4XC-tO-YLa" id="hWo-xq-K2L"/>
+                        <outlet property="registrationButton" destination="d8N-N1-C7B" id="79F-YD-YFm"/>
+                        <outlet property="scrollView" destination="pRw-2K-t5v" id="dt4-1r-F3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGG-8m-G03" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="77"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0rP-uy-HSZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DzC-UM-bs4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aS9-IS-SIl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dTB-rg-kVN" kind="relationship" relationship="rootViewController" id="dkq-hC-SNm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fm9-rv-5fE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
